@@ -1,0 +1,140 @@
+.hero {
+  min-height: 1258px;
+  background-image:
+    linear-gradient(
+      rgba(30, 35, 24, 0.3) 0%,
+      rgba(30, 35, 24, 0.6) 60%,
+      rgba(30, 35, 24, 0.85) 100%
+    ),
+    url(/images/hero.jpg);
+
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+
+  .hero-content {
+    padding-top: 315px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+
+    .slogan {
+      color: $primary-font-brown;
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 2.3px;
+      padding-bottom: 20px;
+    }
+
+    .pop-out {
+      color: $primary-font-white;
+      font-family: "Roboto Slab", sans-serif;
+      width: 780px;
+      font-weight: bold;
+      font-size: 80px;
+      text-align: center;
+      padding-bottom: 24px;
+      line-height: 1.1;
+    }
+
+    .tagline {
+      width: 580px;
+      color: $secondary-font-white;
+      font-size: 19px;
+      text-align: center;
+      line-height: 33px;
+      font-weight: 300;
+      padding-bottom: 40px;
+    }
+
+    .hero-btn-holder {
+      width: 396px;
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 64px;
+
+      .primary-btn {
+        height: 37px;
+        padding-top: 24px;
+        padding-bottom: 26px;
+        padding-left: 33px;
+        padding-right: 33px;
+        background-color: $primary-color;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        align-items: center;
+
+        a {
+          color: $primary-font-white;
+        }
+      }
+
+      .outline-btn {
+        height: 37px;
+        padding-top: 22px;
+        padding-bottom: 24px;
+        padding-left: 33px;
+        padding-right: 33px;
+        border: 2px solid #f5f0e899;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        align-items: center;
+
+        a {
+          color: $primary-font-white;
+        }
+      }
+    }
+
+    .stats-holder {
+      height: 97px;
+      width: 614px;
+      display: flex;
+      justify-content: space-around;
+      border-top: 1px solid #c4a88240;
+      padding-bottom: 365px;
+
+      .stat-box {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .stat-number {
+          font-family: "Roboto Slab", sans-serif;
+          font-weight: 700;
+          font-size: 28px;
+          color: $primary-font-brown;
+          padding-bottom: 5px;
+        }
+
+        .stat-name {
+          color: #f5f0e8b2;
+          font-size: 12px;
+          letter-spacing: 1px;
+        }
+      }
+    }
+
+    .scroll-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            color: #C4A882;
+            font-size: 11px;
+            opacity: .5;
+        }
+
+        .bar {
+            width: 1px;
+            height: 32px;
+            background: linear-gradient(#C4A882, #00000000);
+        }
+    }
+  }
+}

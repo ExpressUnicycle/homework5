@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trail & Timber</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-wrapper center-content">
+        <div class="logo-holder">
+          <div class="logo">
+            <img src="/images/pine-tree-fullbg.png" alt="" />
+          </div>
+          <div class="logo-title">Trail & Timber</div>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#">ADVENTURES</a></li>
+            <li><a href="#">GEAR</a></li>
+            <li><a href="#">GUIDES</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <div class="primary-btn">
+              <li><a href="#" class="book-btn">Book Now</a></li>
+            </div>
+          </ul>
+        </nav>
+        <div class="nav-toggle" aria-label="Open navigation menu">
+          <div class="hamburger-holder">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="mobile-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Buttons</a></li>
+            <li><a href="#">Mixins</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content center-content">
+          <div class="slogan">GUIDED ADVENTURES SINCE 2009</div>
+          <div class="pop-out">Explore Beyond the Trail</div>
+          <div class="tagline">
+            Experience guided outdoor adventures, premium gear, and
+            unforgettable experiences designed for explorers of every skill
+            level.
+          </div>
+          <div class="hero-btn-holder">
+            <div class="primary-btn">
+              <a href="#" class="book-btn">Start Your Adventure</a>
+            </div>
+            <div class="outline-btn">
+              <a href="#">View Trips</a>
+            </div>
+          </div>
+          <div class="stats-holder">
+            <div class="stat-box">
+              <div class="stat-number">500+</div>
+              <div class="stat-name">GUIDED TRIPS</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">2,400+</div>
+              <div class="stat-name">HAPPY ADVENTURERS</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">15+</div>
+              <div class="stat-name">YEARS OF SERVICE</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">98%</div>
+              <div class="stat-name">SAFETY RECORD</div>
+            </div>
+          </div>
+          <div class="scroll-box">
+            <p>SCROLL</p>
+            <div class="bar"></div>
+          </div>
+        </div>
+      </section>
+      <section class="adventures">
+        <div class="adventures-content center-content">
+          
+        </div>
+      </section>
+    </main>
+    <script>
+      const navToggle = document.querySelector(".nav-toggle");
+
+      navToggle.addEventListener("click", () => {
+        navToggle.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

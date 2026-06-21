@@ -1,0 +1,18 @@
+@mixin button-style($bg-color) {
+  background-color: $bg-color;
+  color: $primary-font-white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: $border-radius;
+
+  &:hover {
+    opacity: 0.9;
+    text-decoration: underline;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 786px) {
+    @content;
+  }
+}
