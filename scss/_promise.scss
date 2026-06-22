@@ -1,11 +1,103 @@
 .promise {
-    max-height: 752px;
-    background-color: $primary-font-white;
+  height: 752px;
+  background-color: $primary-font-white;
+  display: flex;
+  align-items: center;
 
-    .promise-content {
-        display: flex;
-        gap: 64px;
+  .promise-content-holder {
+    height: 560px;
+    display: flex;
+    gap: 64px;
 
-        .
+    .promise-img-holder {
+      height: 560px;
+      width: 584px;
+      background-image: url(/images/why-us.avif);
+      background-position: center;
+      background-repeat: none;
+      background-size: cover;
+      overflow: hidden;
+      border-radius: 20px;
     }
+
+    .promise-picture-tag {
+      width: 171px;
+      background-color: $primary-color;
+      border-radius: 14px;
+      margin-top: 458px;
+      margin-left: 24px;
+      padding: 16px 20px;
+
+      .promise-picutre-tag-number {
+        font-family: "Roboto SLab", sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        color: $primary-font-brown;
+      }
+
+      .promise-picture-tag-text {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: $alternate-font-grey;
+        letter-spacing: 0.7px;
+      }
+    }
+    .promise-content {
+      width: 584px;
+
+      .promise-slogan {
+        color: $primary-color;
+        font-weight: 500;
+        letter-spacing: 2.16px;
+        text-transform: uppercase;
+        padding-top: 19px;
+      }
+
+      .promise-popout {
+        font-family: "Roboto Slab", sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        color: $primary-font-black;
+        padding-top: 12px;
+      }
+
+      .promise-tagline {
+        padding-top: 20px;
+        gap: 14px;
+        color: $secondary-font-brown;
+        line-height: 28px;
+      }
+
+      .promise-checklist-holder {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        flex-wrap: wrap;
+
+        .promise-checklist-item {
+          display: flex;
+          gap: 12px;
+          color: $primary-font-black;
+          font-size: 15.2px;
+          line-height: 23px;
+
+          .promise-checklist-check {
+            height: 18px;
+            width: 18px;
+            background-image: url(/images/checkmark.png);
+            background-position: center;
+            background-repeat: none;
+            background-size: cover;
+          }
+
+          .promise-checklist-description {
+            color: $primary-font-black;
+            font-size: 15.2px;
+            line-height: 23px;
+            
+          }
+        }
+      }
+    }
+  }
 }

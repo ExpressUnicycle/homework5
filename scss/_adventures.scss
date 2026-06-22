@@ -35,6 +35,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 32px;
+      width: 100%;
 
       .adventure-card {
         height: 497px;
