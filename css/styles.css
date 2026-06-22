@@ -158,11 +158,22 @@ a {
 .main-buttons .btn-primary {
   background-color: #2D5016;
   color: #F5F0E8;
-  padding: 0.75rem 1.5rem;
+  padding: 15px 38px;
   border: none;
   border-radius: 8px;
 }
 .main-buttons .btn-primary:hover {
+  opacity: 0.9;
+  text-decoration: underline;
+}
+.main-buttons .btn-secondary {
+  background-color: #2D5016;
+  color: #F5F0E8;
+  padding: 15px 38px;
+  border: none;
+  border-radius: 8px;
+}
+.main-buttons .btn-secondary:hover {
   opacity: 0.9;
   text-decoration: underline;
 }
@@ -549,6 +560,146 @@ a {
   color: #1E2318;
   font-size: 15.2px;
   line-height: 23px;
+}
+
+.reviews {
+  background-color: #2D3A22;
+}
+.reviews .reviews-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reviews .reviews-content .reviews-slogan {
+  padding-top: 96px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 2.16px;
+  color: #C4A882;
+}
+.reviews .reviews-content .reviews-callout {
+  padding-top: 12px;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 700;
+  color: #F5F0E8;
+  font-size: 44px;
+}
+.reviews .reviews-content .reviews-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  justify-content: space-between;
+  padding-top: 48px;
+  padding-bottom: 96px;
+}
+.reviews .reviews-content .reviews-cards .reviews-card {
+  height: 298px;
+  width: 392px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid rgba(196, 168, 130, 0.2);
+  border-radius: 16px;
+  background-color: rgba(245, 240, 232, 0.0588235294);
+}
+.reviews .reviews-content .reviews-cards .reviews-card .star-holder {
+  display: flex;
+  gap: 4px;
+}
+.reviews .reviews-content .reviews-cards .reviews-card .star-holder .star {
+  height: 15px;
+  width: 15px;
+  background-image: url(/images/star.png);
+}
+.reviews .reviews-content .reviews-cards .reviews-card .review {
+  font-size: 15.2px;
+  line-height: 26.6px;
+  color: rgba(245, 240, 232, 0.8509803922);
+  font-style: italic;
+}
+.reviews .reviews-content .reviews-cards .reviews-card .user-info-holder {
+  display: flex;
+  gap: 12px;
+}
+.reviews .reviews-content .reviews-cards .reviews-card .user-info-holder .user-picture-1 {
+  height: 44px;
+  width: 44px;
+  background-image: url(/images/maya-chen.avif);
+  background-size: 115%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  border: 2px solid rgba(196, 168, 130, 0.4);
+}
+.reviews .reviews-content .reviews-cards .reviews-card .user-info-holder .user-picture-2 {
+  height: 44px;
+  width: 44px;
+  background-image: url(/images/jordan-okafor.avif);
+  background-size: 115%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  border: 2px solid rgba(196, 168, 130, 0.4);
+}
+.reviews .reviews-content .reviews-cards .reviews-card .user-info-holder .user-picture-3 {
+  height: 44px;
+  width: 44px;
+  background-image: url(/images/rafael-torres.avif);
+  background-size: 115%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  border: 2px solid rgba(196, 168, 130, 0.4);
+}
+.reviews .reviews-content .reviews-cards .reviews-card .user-info-holder .name-and-date {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.reviews .reviews-content .reviews-cards .reviews-card .user-info-holder .name-and-date .name {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 15.2px;
+  color: #F5F0E8;
+  font-weight: 600;
+}
+.reviews .reviews-content .reviews-cards .reviews-card .user-info-holder .name-and-date .date {
+  font-size: 12.38px;
+  color: #C4A882;
+}
+
+.action {
+  background-color: #2D5016;
+}
+.action .action-content {
+  padding-top: 96px;
+  max-width: 896px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.action .action-content .action-slogan {
+  font-size: 12px;
+  font-weight: 600;
+  color: #C4A882;
+  letter-spacing: 2.16px;
+  text-transform: uppercase;
+}
+.action .action-content .action-callout {
+  padding-top: 16px;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 600;
+  color: #F5F0E8;
+  font-size: 44px;
+}
+.action .action-content .action-tagline {
+  width: 500px;
+  padding-top: 20px;
+  font-size: 17.6px;
+  color: rgba(245, 240, 232, 0.8);
+  line-height: 29.92px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,8 +1,9 @@
 .reviews {
-  height: 618px;
+  // min-height: 618px;
   background-color: $secondary-color;
 
   .reviews-content {
+    // height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,6 +20,86 @@
     .reviews-callout {
       padding-top: 12px;
       font-family: $secondary-font;
+      font-weight: $callout-weight;
+      color: $primary-font-white;
+      font-size: 44px;
+    }
+
+    .reviews-cards {
+      // height: 298px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      justify-content: space-between;
+      padding-top: 48px;
+      padding-bottom: 96px;
+      // overflow: hidden;
+
+      .reviews-card {
+        height: 298px;
+        width: 392px;
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border: 1px solid #c4a88233;
+        border-radius: 16px;
+        background-color: #f5f0e80f;
+
+        .star-holder {
+          display: flex;
+          gap: 4px;
+
+          .star {
+            height: 15px;
+            width: 15px;
+            background-image: url(/images/star.png);
+          }
+        }
+
+        .review {
+          font-size: 15.2px;
+          line-height: 26.6px;
+          color: $secondary-font-white;
+          font-style: italic;
+        }
+
+        .user-info-holder {
+          display: flex;
+          gap: 12px;
+
+          .user-picture-1 {
+            @include review-user-picture(url(/images/maya-chen.avif));
+          }
+
+          .user-picture-2 {
+            @include review-user-picture (url(/images/jordan-okafor.avif))
+          }
+
+          .user-picture-3 {
+            @include review-user-picture (url(/images/rafael-torres.avif))
+          }
+
+          .name-and-date {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+
+            .name {
+              font-family: $secondary-font;
+              font-size: 15.2px;
+              color: $primary-font-white;
+              font-weight: 600;
+            }
+
+            .date {
+              font-size: 12.38px;
+              color: $primary-font-brown;
+
+            }
+          }
+        }
+      }
     }
   }
 }

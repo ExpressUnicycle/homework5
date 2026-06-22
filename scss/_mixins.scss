@@ -1,7 +1,7 @@
 @mixin button-style($bg-color) {
   background-color: $bg-color;
   color: $primary-font-white;
-  padding: 0.75rem 1.5rem;
+  padding: 15px 38px;
   border: none;
   border-radius: $border-radius;
 
@@ -10,6 +10,27 @@
     text-decoration: underline;
   }
 }
+
+@mixin review-user-picture($bg-image) {
+  height: 44px;
+  width: 44px;
+  background-image: $bg-image;
+  background-size: 115%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  // background-clip: padding-box;
+  border: 2px solid #c4a88266;
+}
+
+@mixin slogan($color) {
+    font-size: 12px;
+    font-weight: 600;
+    color: $color;
+    letter-spacing: 2.16px;
+    text-transform: uppercase;
+}
+
 
 @mixin mobile {
   @media (max-width: 786px) {

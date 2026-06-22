@@ -6,6 +6,10 @@
         @include button-style($primary-color)
     }
 
+    .btn-secondary {
+        @include button-style($primary-color)
+    }
+
     // .btn-secondary {
     //     @include button-style($secondary-color)
     // }

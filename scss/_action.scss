@@ -1,0 +1,32 @@
+.action {
+  background-color: $primary-color;
+
+  .action-content {
+    padding-top: 96px;
+    max-width: 896px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .action-slogan {
+      @include slogan($primary-font-brown);
+    }
+
+    .action-callout {
+      padding-top: 16px;
+      font-family: $secondary-font;
+      font-weight: 600;
+      color: $primary-font-white;
+      font-size: 44px;
+    }
+
+    .action-tagline {
+        width: 500px;
+        padding-top: 20px;
+        font-size: 17.6px;
+        color: $alternate-font-grey;
+        line-height: 29.92px;
+        text-align: center;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+use mixin for adventure card background imgs
+
+get spacing between the duration and days in adventure cards
+
+get arrows for learn more in adventure cards
+
+change "book" button outline color in menu mode
+
+make it shrinkable
+
+media queries
+
+make button a mixin
+
+button and card effects
