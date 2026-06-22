@@ -1,0 +1,86 @@
+.services {
+  min-height: 695px;
+  background-color: $background-dark;
+
+  .services-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .services-slogan {
+      color: $primary-font-brown;
+      font-size: 12px;
+      padding-top: 96px;
+      padding-bottom: 12px;
+    }
+
+    .services-popout {
+      font-family: "Roboto SLab", sans-serif;
+      font-weight: 700;
+      font-size: 44px;
+      color: $primary-font-white;
+      padding-bottom: 16px;
+    }
+
+    .services-tagline {
+      width: 460px;
+      color: #f5f0e8a6;
+      padding-bottom: 48px;
+      text-align: center;
+      line-height: 28px;
+      font-size: 16.8px;
+      font-weight: 400;
+    }
+
+    .service-cards {
+      height: 301px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+
+      .service-card {
+        width: 290px;
+        height: 100%;
+        background-color: #f5f0e80d;
+        border: 1px solid #c4a88233;
+        border-radius: 16px;
+        padding: 32px 28px;
+
+        .service-card-img {
+          height: 56px;
+          width: 56px;
+          border-radius: 12px;
+          background-color: #2d501699;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        //   padding-bottom: 20px;
+
+          .dot {
+            height: 23px;
+            width: 23px;
+            background-color: $primary-font-brown;
+            border-radius: 50px;
+          }
+        }
+
+        .service-card-title {
+          font-family: "Roboto Slab", sans-serif;
+          font-weight: 700;
+          font-size: 18px;
+          color: $primary-font-white;
+          padding-bottom: 10px;
+          padding-top: 20px;
+        }
+
+        .service-card-description {
+            color: $primary-font-grey;
+            font-size: 14.8px;
+            line-height: 24.4px;
+            font-weight: 400;
+            font-family: "Inter", sans-serif;
+        }
+      }
+    }
+  }
+}
