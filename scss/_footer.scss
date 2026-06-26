@@ -1,0 +1,139 @@
+footer {
+  background-color: #111710;
+  padding-top: 80px;
+  min-height: 476px;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+
+    .nav-box {
+      height: 248.58px;
+      width: 208px;
+
+      .nav-box-title-holder {
+        padding-bottom: 20px;
+        font-weight: 600;
+        color: $primary-font-white;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        .nav-box-title-img-holder {
+          height: 34px;
+          width: 34px;
+          border-radius: 8px;
+          background-image: url(/images/pine-tree-fullbg.png);
+          background-position: center;
+          background-repeat: none;
+          background-size: cover;
+        }
+      }
+
+      .footer-button-holder {
+        padding-top: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .email-input {
+          height: 43px;
+          border-radius: $border-radius;
+          background-color: #f5f0e814;
+          border: 1px solid #c4a88240;
+          display: flex;
+          padding: 12px 14px;
+          color: $primary-font-grey;
+          font-size: 14px;
+          line-height: 100%;
+        }
+
+        .subscribe-btn {
+          height: 43px;
+          border-radius: $border-radius;
+          background-color: $primary-color;
+          padding: 12px 14px;
+          color: $primary-font-white;
+          font-size: 14px;
+          line-height: 21px;
+          font-weight: 600;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      .nav-box-anchor-holder {
+        display: flex;
+        flex-direction: column;
+        gap: 11.2px;
+
+        a {
+          font-size: 14px;
+          line-height: 24px;
+          color: $primary-font-grey;
+        }
+      }
+
+      .nav-box-content {
+        font-size: 14px;
+        line-height: 23.8px;
+        color: $primary-font-grey;
+
+        .contact-holder {
+          padding-top: 24px;
+          //   padding-bottom: 64px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          .contact-item-holder {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+
+            .contact-img-1 {
+              @include contact-images(url(/images/phone.png));
+            }
+
+            .contact-img-2 {
+              @include contact-images(url(/images/email.png));
+            }
+
+            .contact-img-3 {
+              @include contact-images(url(/images/gps.png));
+            }
+
+            .contact-item {
+              font-size: 13px;
+              color: $primary-font-grey;
+            }
+          }
+        }
+      }
+    }
+  }
+  .copyright-holder {
+    height: 52px;
+    border-top: 1px solid #c4a8821f;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+    padding-top: 33px;
+
+    .copyright {
+      font-size: 12.8px;
+      color: $footer-font-color;
+    }
+
+    .copyright-links {
+      display: flex;
+      gap: 24px;
+
+      a {
+        font-size: 12.8px;
+        color: $footer-font-color;
+      }
+    }
+  }
+}

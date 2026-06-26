@@ -105,7 +105,7 @@ a {
   height: 1px;
   background-color: #C4A882;
   margin: 6px auto;
-  border-radius: 8px;
+  border-radius: 10px;
   transition: all 0.3s ease;
 }
 .site-header .nav-toggle:hover span {
@@ -154,28 +154,6 @@ a {
 
 .main-buttons {
   margin: 50px auto;
-}
-.main-buttons .btn-primary {
-  background-color: #2D5016;
-  color: #F5F0E8;
-  padding: 15px 38px;
-  border: none;
-  border-radius: 8px;
-}
-.main-buttons .btn-primary:hover {
-  opacity: 0.9;
-  text-decoration: underline;
-}
-.main-buttons .btn-secondary {
-  background-color: #2D5016;
-  color: #F5F0E8;
-  padding: 15px 38px;
-  border: none;
-  border-radius: 8px;
-}
-.main-buttons .btn-secondary:hover {
-  opacity: 0.9;
-  text-decoration: underline;
 }
 
 .hero {
@@ -700,6 +678,173 @@ a {
   color: rgba(245, 240, 232, 0.8);
   line-height: 29.92px;
   text-align: center;
+}
+.action .action-content .action-btn-holder {
+  width: 848px;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 96px;
+}
+.action .action-content .action-btn-holder .btn-primary {
+  background-color: #C4A882;
+  color: #1E2318;
+  padding: 15px 38px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.action .action-content .action-btn-holder .btn-primary:hover {
+  opacity: 0.9;
+  text-decoration: underline;
+}
+.action .action-content .action-btn-holder .btn-secondary {
+  background-color: none;
+  color: #F5F0E8;
+  padding: 15px 38px;
+  border: 2px solid rgba(245, 240, 232, 0.6);
+  border-radius: 10px;
+  font-weight: 600;
+}
+.action .action-content .action-btn-holder .btn-secondary:hover {
+  opacity: 0.9;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #111710;
+  padding-top: 80px;
+  min-height: 476px;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-content .nav-box {
+  height: 248.58px;
+  width: 208px;
+}
+footer .footer-content .nav-box .nav-box-title-holder {
+  padding-bottom: 20px;
+  font-weight: 600;
+  color: #F5F0E8;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+footer .footer-content .nav-box .nav-box-title-holder .nav-box-title-img-holder {
+  height: 34px;
+  width: 34px;
+  border-radius: 8px;
+  background-image: url(/images/pine-tree-fullbg.png);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+footer .footer-content .nav-box .footer-button-holder {
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+footer .footer-content .nav-box .footer-button-holder .email-input {
+  height: 43px;
+  border-radius: 10px;
+  background-color: rgba(245, 240, 232, 0.0784313725);
+  border: 1px solid rgba(196, 168, 130, 0.2509803922);
+  display: flex;
+  padding: 12px 14px;
+  color: rgba(245, 240, 232, 0.6509803922);
+  font-size: 14px;
+  line-height: 100%;
+}
+footer .footer-content .nav-box .footer-button-holder .subscribe-btn {
+  height: 43px;
+  border-radius: 10px;
+  background-color: #2D5016;
+  padding: 12px 14px;
+  color: #F5F0E8;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-content .nav-box .nav-box-anchor-holder {
+  display: flex;
+  flex-direction: column;
+  gap: 11.2px;
+}
+footer .footer-content .nav-box .nav-box-anchor-holder a {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(245, 240, 232, 0.6509803922);
+}
+footer .footer-content .nav-box .nav-box-content {
+  font-size: 14px;
+  line-height: 23.8px;
+  color: rgba(245, 240, 232, 0.6509803922);
+}
+footer .footer-content .nav-box .nav-box-content .contact-holder {
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footer-content .nav-box .nav-box-content .contact-holder .contact-item-holder {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+footer .footer-content .nav-box .nav-box-content .contact-holder .contact-item-holder .contact-img-1 {
+  height: 13px;
+  width: 13px;
+  background-image: url(/images/phone.png);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+footer .footer-content .nav-box .nav-box-content .contact-holder .contact-item-holder .contact-img-2 {
+  height: 13px;
+  width: 13px;
+  background-image: url(/images/email.png);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+footer .footer-content .nav-box .nav-box-content .contact-holder .contact-item-holder .contact-img-3 {
+  height: 13px;
+  width: 13px;
+  background-image: url(/images/gps.png);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+footer .footer-content .nav-box .nav-box-content .contact-holder .contact-item-holder .contact-item {
+  font-size: 13px;
+  color: rgba(245, 240, 232, 0.6509803922);
+}
+footer .copyright-holder {
+  height: 52px;
+  border-top: 1px solid rgba(196, 168, 130, 0.1215686275);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 64px;
+  padding-top: 33px;
+}
+footer .copyright-holder .copyright {
+  font-size: 12.8px;
+  color: rgba(245, 240, 232, 0.3490196078);
+}
+footer .copyright-holder .copyright-links {
+  display: flex;
+  gap: 24px;
+}
+footer .copyright-holder .copyright-links a {
+  font-size: 12.8px;
+  color: rgba(245, 240, 232, 0.3490196078);
 }
 
 /*# sourceMappingURL=styles.css.map */
