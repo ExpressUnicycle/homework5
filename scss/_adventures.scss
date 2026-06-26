@@ -44,22 +44,29 @@
         border-radius: 16px;
         box-shadow: 0px 2px 16px 0px #1e231814;
 
-        .adventure-card-img {
-          img {
-            height: 220px;
-            width: 100%;
-            background-position: center;
-            background-size: cover;
-            background-repeat: none;
-            overflow: hidden;
-            border-top-left-radius: 16px;
-            border-top-right-radius: 16px;
+        .adventure-card-img-holder {
+          height: 220px;
+          width: 100%;
+          border-top-left-radius: 16px;
+          border-top-right-radius: 16px;
+
+          .adventure-card-1-img {
+            @include adventure-card-images(url(/images/moutain-trekking.avif));
           }
 
-        //   .adventure-card-tag {
+          .adventure-card-2-img {
+            @include adventure-card-images(url(/images/forrest-camping.avif));
+          }
+
+          .adventure-card-3-img {
+            @include adventure-card-images(url(/images/river-expeditions.avif));
+          }
+
+          .adventure-card-img-tag {
             
-        //   }
+          }
         }
+
         .adventure-card-content {
           padding: 24px;
 
@@ -84,11 +91,11 @@
             padding-top: 16px;
 
             .adventure-card-duration {
-              span {
+              .adventure-card-bottom-title {
                 font-size: 11px;
                 color: $primary-font-brown;
                 letter-spacing: 1.12px;
-                padding-bottom: 16px;
+                padding-bottom: 3px;
 
                 p {
                   font-size: 13.6px;
@@ -97,23 +104,34 @@
               }
             }
             .adventure-card-difficulty {
-              span {
+              .adventure-card-bottom-title {
                 font-size: 11px;
                 color: $primary-font-brown;
                 letter-spacing: 1.12px;
-                padding-bottom: 16px;
+                padding-bottom: 3px;
 
                 p {
                   font-size: 13.6px;
                   color: $primary-color;
-                  margin-top: 10px;
+                  // margin-top: 10px;
                 }
               }
             }
           }
           .adventure-card-learn-holder {
+            display: flex;
+            gap: 8px;
+            // line-height: 21.6px;
+            // align-items: center;
+
             p {
               color: $primary-color;
+            }
+
+            img {
+              height: 20px;
+              width: 20px;
+              // padding-top: 5px;
             }
           }
         }

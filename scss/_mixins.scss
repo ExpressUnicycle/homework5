@@ -55,6 +55,16 @@
   background-size: cover;
 }
 
+@mixin adventure-card-images($bg-img) {
+  height: 220px;
+  width: 100%;
+  background-image: $bg-img;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  overflow: hidden;
+}
+
 @mixin mobile {
   @media (max-width: 786px) {
     @content;
