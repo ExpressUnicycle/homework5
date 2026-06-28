@@ -63,10 +63,25 @@
   background-size: cover;
   background-repeat: none;
   overflow: hidden;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+@mixin card-effects() {
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+  }
 }
 
 @mixin mobile {
-  @media (max-width: 786px) {
+  @media (max-width: 795px) {
+    @content;
+  }
+}
+
+@mixin card-shifter {
+  @media (max-width: 1290px) {
     @content;
   }
 }

@@ -45,6 +45,11 @@
         border: 1px solid #c4a88233;
         border-radius: 16px;
         background-color: #f5f0e80f;
+        transition: 0.3s ease;
+
+        &:hover {
+          @include card-effects
+        }
 
         .star-holder {
           display: flex;
