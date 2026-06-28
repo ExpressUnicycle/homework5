@@ -58,7 +58,7 @@
           .star {
             height: 15px;
             width: 15px;
-            background-image: url(/images/star.png);
+            background-image: url(../images/star.png);
           }
         }
 
@@ -74,15 +74,15 @@
           gap: 12px;
 
           .user-picture-1 {
-            @include review-user-picture(url(/images/maya-chen.avif));
+            @include review-user-picture(url(../images/maya-chen.avif));
           }
 
           .user-picture-2 {
-            @include review-user-picture(url(/images/jordan-okafor.avif));
+            @include review-user-picture(url(../images/jordan-okafor.avif));
           }
 
           .user-picture-3 {
-            @include review-user-picture(url(/images/rafael-torres.avif));
+            @include review-user-picture(url(../images/rafael-torres.avif));
           }
 
           .name-and-date {

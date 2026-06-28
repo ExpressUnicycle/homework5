@@ -156,7 +156,7 @@ a {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(30, 35, 24, 0.3) 0%, rgba(30, 35, 24, 0.6) 60%, rgba(30, 35, 24, 0.85) 100%), url(/images/hero.jpg);
+  background-image: linear-gradient(rgba(30, 35, 24, 0.3) 0%, rgba(30, 35, 24, 0.6) 60%, rgba(30, 35, 24, 0.85) 100%), url(../images/hero.jpg);
   background-repeat: none;
   background-size: cover;
   background-position: center;
@@ -360,6 +360,7 @@ a {
 .adventures .adventures-content .adventure-cards .adventure-card {
   height: 497px;
   max-width: 389px;
+  background-color: #FDFAF5;
   border: 1px solid rgba(45, 80, 22, 0.1019607843);
   border-radius: 16px;
   box-shadow: 0px 2px 16px 0px rgba(30, 35, 24, 0.0784313725);
@@ -379,7 +380,7 @@ a {
 .adventures .adventures-content .adventure-cards .adventure-card .adventure-card-img-holder .adventure-card-1-img {
   height: 220px;
   width: 100%;
-  background-image: url(/images/moutain-trekking.avif);
+  background-image: url(../images/moutain-trekking.avif);
   background-position: center;
   background-size: cover;
   background-repeat: none;
@@ -390,7 +391,7 @@ a {
 .adventures .adventures-content .adventure-cards .adventure-card .adventure-card-img-holder .adventure-card-2-img {
   height: 220px;
   width: 100%;
-  background-image: url(/images/forrest-camping.avif);
+  background-image: url(../images/forrest-camping.avif);
   background-position: center;
   background-size: cover;
   background-repeat: none;
@@ -401,7 +402,7 @@ a {
 .adventures .adventures-content .adventure-cards .adventure-card .adventure-card-img-holder .adventure-card-3-img {
   height: 220px;
   width: 100%;
-  background-image: url(/images/river-expeditions.avif);
+  background-image: url(../images/river-expeditions.avif);
   background-position: center;
   background-size: cover;
   background-repeat: none;
@@ -605,7 +606,7 @@ a {
 .promise .promise-content-holder .promise-img-holder {
   min-height: 560px;
   max-width: 584px;
-  background-image: url(/images/why-us.avif);
+  background-image: url(../images/why-us.avif);
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -745,7 +746,7 @@ a {
 .reviews .reviews-content .reviews-cards .reviews-card .star-holder .star {
   height: 15px;
   width: 15px;
-  background-image: url(/images/star.png);
+  background-image: url(../images/star.png);
 }
 .reviews .reviews-content .reviews-cards .reviews-card .review {
   font-size: 15.2px;
@@ -760,7 +761,7 @@ a {
 .reviews .reviews-content .reviews-cards .reviews-card .user-info-holder .user-picture-1 {
   height: 44px;
   width: 44px;
-  background-image: url(/images/maya-chen.avif);
+  background-image: url(../images/maya-chen.avif);
   background-size: 115%;
   background-position: center;
   background-repeat: no-repeat;
@@ -770,7 +771,7 @@ a {
 .reviews .reviews-content .reviews-cards .reviews-card .user-info-holder .user-picture-2 {
   height: 44px;
   width: 44px;
-  background-image: url(/images/jordan-okafor.avif);
+  background-image: url(../images/jordan-okafor.avif);
   background-size: 115%;
   background-position: center;
   background-repeat: no-repeat;
@@ -780,7 +781,7 @@ a {
 .reviews .reviews-content .reviews-cards .reviews-card .user-info-holder .user-picture-3 {
   height: 44px;
   width: 44px;
-  background-image: url(/images/rafael-torres.avif);
+  background-image: url(../images/rafael-torres.avif);
   background-size: 115%;
   background-position: center;
   background-repeat: no-repeat;
@@ -916,7 +917,7 @@ footer .footer-content .footer-box .footer-box-title-holder .footer-box-title-im
   height: 34px;
   width: 34px;
   border-radius: 8px;
-  background-image: url(/images/pine-tree-fullbg.png);
+  background-image: url(../images/pine-tree-fullbg.png);
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -993,7 +994,7 @@ footer .footer-content .footer-box .footer-box-content .contact-holder .contact-
 footer .footer-content .footer-box .footer-box-content .contact-holder .contact-item-holder .contact-img-1 {
   height: 13px;
   width: 13px;
-  background-image: url(/images/phone.png);
+  background-image: url(../images/phone.png);
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -1001,7 +1002,7 @@ footer .footer-content .footer-box .footer-box-content .contact-holder .contact-
 footer .footer-content .footer-box .footer-box-content .contact-holder .contact-item-holder .contact-img-2 {
   height: 13px;
   width: 13px;
-  background-image: url(/images/email.png);
+  background-image: url(../images/email.png);
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -1009,7 +1010,7 @@ footer .footer-content .footer-box .footer-box-content .contact-holder .contact-
 footer .footer-content .footer-box .footer-box-content .contact-holder .contact-item-holder .contact-img-3 {
   height: 13px;
   width: 13px;
-  background-image: url(/images/gps.png);
+  background-image: url(../images/gps.png);
   background-position: center;
   background-repeat: none;
   background-size: cover;

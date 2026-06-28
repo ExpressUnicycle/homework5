@@ -24,7 +24,7 @@ footer {
           height: 34px;
           width: 34px;
           border-radius: 8px;
-          background-image: url(/images/pine-tree-fullbg.png);
+          background-image: url(../images/pine-tree-fullbg.png);
           background-position: center;
           background-repeat: none;
           background-size: cover;
@@ -109,15 +109,15 @@ footer {
             align-items: center;
 
             .contact-img-1 {
-              @include contact-images(url(/images/phone.png));
+              @include contact-images(url(../images/phone.png));
             }
 
             .contact-img-2 {
-              @include contact-images(url(/images/email.png));
+              @include contact-images(url(../images/email.png));
             }
 
             .contact-img-3 {
-              @include contact-images(url(/images/gps.png));
+              @include contact-images(url(../images/gps.png));
             }
 
             .contact-item {
