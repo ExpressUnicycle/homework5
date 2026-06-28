@@ -36,8 +36,8 @@
       // overflow: hidden;
 
       .reviews-card {
-        height: 298px;
-        width: 392px;
+        min-height: 298px;
+        max-width: 392px;
         padding: 32px;
         display: flex;
         flex-direction: column;
@@ -48,7 +48,7 @@
         transition: 0.3s ease;
 
         &:hover {
-          @include card-effects
+          @include card-effects;
         }
 
         .star-holder {
@@ -78,11 +78,11 @@
           }
 
           .user-picture-2 {
-            @include review-user-picture (url(/images/jordan-okafor.avif))
+            @include review-user-picture(url(/images/jordan-okafor.avif));
           }
 
           .user-picture-3 {
-            @include review-user-picture (url(/images/rafael-torres.avif))
+            @include review-user-picture(url(/images/rafael-torres.avif));
           }
 
           .name-and-date {
@@ -100,7 +100,56 @@
             .date {
               font-size: 12.38px;
               color: $primary-font-brown;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
+@media (max-width: 1300px) {
+  .reviews {
+    padding-left: 24px;
+    padding-right: 24px;
+    .reviews-content {
+      .reviews-slogan {
+      }
+
+      .reviews-callout {
+        font-size: 28px;
+      }
+
+      .reviews-cards {
+        grid-template-columns: repeat(1, 1fr);
+        .reviews-card {
+          &:hover {
+          }
+
+          .star-holder {
+            .star {
+            }
+          }
+
+          .review {
+          }
+
+          .user-info-holder {
+            .user-picture-1 {
+            }
+
+            .user-picture-2 {
+            }
+
+            .user-picture-3 {
+            }
+
+            .name-and-date {
+              .name {
+              }
+
+              .date {
+              }
             }
           }
         }

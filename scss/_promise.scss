@@ -1,17 +1,20 @@
 .promise {
-  height: 752px;
+  // min-height: 752px;
   background-color: $primary-font-white;
   display: flex;
   align-items: center;
 
   .promise-content-holder {
-    height: 560px;
-    display: flex;
+    min-height: 560px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 64px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 
     .promise-img-holder {
-      height: 560px;
-      width: 584px;
+      min-height: 560px;
+      max-width: 584px;
       background-image: url(/images/why-us.avif);
       background-position: center;
       background-repeat: none;
@@ -43,7 +46,7 @@
       }
     }
     .promise-content {
-      width: 584px;
+      max-width: 584px;
 
       .promise-slogan {
         color: $primary-color;
@@ -71,7 +74,7 @@
       .promise-checklist-holder {
         display: flex;
         flex-direction: column;
-        gap: 18px;
+        gap: 14px;
         flex-wrap: wrap;
 
         .promise-checklist-item {
@@ -94,7 +97,46 @@
             color: $primary-font-black;
             font-size: 15.2px;
             line-height: 23px;
-            
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .promise {
+    padding-left: 24px;
+    padding-right: 24px;
+    .promise-content-holder {
+      grid-template-columns: repeat(1,1fr);
+      .promise-img-holder {
+      }
+
+      .promise-picture-tag {
+        .promise-picutre-tag-number {
+        }
+
+        .promise-picture-tag-text {
+        }
+      }
+      .promise-content {
+        .promise-slogan {
+        }
+
+        .promise-popout {
+        }
+
+        .promise-tagline {
+        }
+
+        .promise-checklist-holder {
+          .promise-checklist-item {
+            .promise-checklist-check {
+            }
+
+            .promise-checklist-description {
+            }
           }
         }
       }

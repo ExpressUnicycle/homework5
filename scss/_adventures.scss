@@ -1,7 +1,7 @@
 .adventures {
-  min-height: 891px;
+  // min-height: 891px;
   background-color: $background-light;
-   padding: $spacing-md $spacing-lg;
+  padding: $spacing-md $spacing-lg;
 
   .adventures-content {
     display: flex;
@@ -13,6 +13,8 @@
       font-size: 12px;
       padding-top: 96px;
       padding-bottom: 12px;
+      font-weight: 600;
+      letter-spacing: 2.16px;
     }
 
     .adventure-popout {
@@ -30,13 +32,15 @@
       text-align: center;
       line-height: 28px;
       padding-bottom: 28px;
+      line-height: 28.5px;
     }
 
     .adventure-cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 32px;
-      width: 100%;
+      padding-bottom: 96px;
+      // width: 100%;
 
       // @mixin card-shifter {
       //   @media (max-width: 1290px) {
@@ -46,7 +50,7 @@
 
       .adventure-card {
         height: 497px;
-        width: 389px;
+        max-width: 389px;
         border: 1px solid #2d50161a;
         border-radius: 16px;
         box-shadow: 0px 2px 16px 0px #1e231814;
@@ -110,7 +114,7 @@
           .adventure-card-detail-holder {
             display: flex;
             border-top: 1px solid #2d50161a;
-            gap: 24px;
+            gap: 16px;
             padding-top: 16px;
 
             .adventure-card-duration {
@@ -144,8 +148,7 @@
           .adventure-card-learn-holder {
             display: flex;
             gap: 8px;
-            // line-height: 21.6px;
-            // align-items: center;
+            // padding-bottom: 24px;
 
             p {
               color: $primary-color;
@@ -155,6 +158,78 @@
               height: 20px;
               width: 20px;
               // padding-top: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .adventures {
+    .adventures-content {
+      .adventure-slogan {
+      }
+
+      .adventure-popout {
+        font-size: 28px;
+        text-align: center;
+      }
+
+      .adventure-tagline {
+      }
+
+      .adventure-cards {
+        grid-template-columns: repeat(1, 1fr);
+        // padding-left: 24px;
+        // padding-right: 24px;
+        .adventure-card {
+          &:hover {
+          }
+
+          .adventure-card-img-holder {
+            .adventure-card-1-img {
+            }
+
+            .adventure-card-2-img {
+            }
+
+            .adventure-card-3-img {
+            }
+
+            .adventure-card-img-tag {
+            }
+          }
+
+          .adventure-card-content {
+            .adventure-card-title {
+            }
+
+            .adventure-card-description {
+            }
+
+            .adventure-card-detail-holder {
+              gap: 10px;;
+              .adventure-card-duration {
+                .adventure-card-bottom-title {
+                  p {
+                  }
+                }
+              }
+              .adventure-card-difficulty {
+                .adventure-card-bottom-title {
+                  p {
+                  }
+                }
+              }
+            }
+            .adventure-card-learn-holder {
+              p {
+              }
+
+              img {
+              }
             }
           }
         }

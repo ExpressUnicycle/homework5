@@ -1,8 +1,9 @@
 .action {
   background-color: $primary-color;
+  padding: 96px 24px;
+
 
   .action-content {
-    padding-top: 96px;
     max-width: 896px;
     display: flex;
     flex-direction: column;
@@ -21,7 +22,7 @@
     }
 
     .action-tagline {
-      width: 500px;
+      max-width: 500px;
       padding-top: 20px;
       font-size: 17.6px;
       color: $alternate-font-grey;
@@ -30,12 +31,11 @@
     }
 
     .action-btn-holder {
-      width: 848px;
+      max-width: 848px;
       display: flex;
       gap: 16px;
       justify-content: center;
       padding-top: 20px;
-      padding-bottom: 96px;
 
       .btn-primary {
         @include button-style($primary-font-brown, $primary-font-black);
@@ -43,6 +43,34 @@
 
       .btn-secondary {
         @include outline-button-style($primary-font-white);
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .action {
+    
+    .action-content {
+      .action-slogan {
+      }
+
+      .action-callout {
+        font-size: 28px;
+        text-align: center;
+      }
+
+      .action-tagline {
+        font-size: 16px;
+      }
+
+      .action-btn-holder {
+        flex-direction: column;
+        .btn-primary {
+        }
+
+        .btn-secondary {
+        }
       }
     }
   }

@@ -8,12 +8,13 @@ footer {
     justify-content: space-between;
 
     .footer-box {
-      height: 248.58px;
+    //   min-height: 248.58px;
       width: 208px;
 
       .footer-box-title-holder {
         padding-bottom: 20px;
         font-weight: 600;
+        font-family: "Roboto Slab", sans-serif; 
         color: $primary-font-white;
         display: flex;
         gap: 10px;
@@ -98,7 +99,6 @@ footer {
 
         .contact-holder {
           padding-top: 24px;
-          //   padding-bottom: 64px;
           display: flex;
           flex-direction: column;
           gap: 10px;
@@ -132,8 +132,9 @@ footer {
   .copyright-holder {
     height: 52px;
     border-top: 1px solid #c4a8821f;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // justify-content: space-between;
     margin-top: 64px;
     padding-top: 33px;
 
@@ -145,6 +146,7 @@ footer {
     .copyright-links {
       display: flex;
       gap: 24px;
+      justify-content: flex-end;
     }
 
     a {
@@ -155,6 +157,82 @@ footer {
         opacity: 0.9;
         color: $primary-font-white;
         text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  footer {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 32px;
+    .footer-content {
+        flex-direction: column;
+        gap: 48px;
+      .footer-box {
+        width: 335px;
+        .footer-box-title-holder {
+          .footer-box-title-img-holder {
+          }
+        }
+
+        .footer-button-holder {
+          .email-input {
+          }
+
+          .subscribe-btn {
+            &:hover {
+            }
+
+            a {
+              text-decoration: none;
+              color: $primary-font-white;
+            }
+          }
+        }
+
+        .footer-box-anchor-holder {
+          a {
+            &:hover {
+            }
+          }
+        }
+
+        .footer-box-content {
+          .contact-holder {
+            .contact-item-holder {
+              .contact-img-1 {
+              }
+
+              .contact-img-2 {
+              }
+
+              .contact-img-3 {
+              }
+
+              .contact-item {
+              }
+            }
+          }
+        }
+      }
+    }
+    .copyright-holder {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+        padding-bottom: 32px;
+      .copyright {
+      }
+
+      .copyright-links {
+        justify-content: flex-start;
+        gap: 23px;
+      }
+
+      a {
+        &:hover {
+        }
       }
     }
   }
